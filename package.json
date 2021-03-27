@@ -1,0 +1,51 @@
+{
+  "name": "bfbusby-dot-com",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "start": "next start",
+    "test": "echo OK"
+  },
+  "keywords": [],
+  "author": "Philihp Busby <philihp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "10.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@philihp/eslint-config": "^4.3.0"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "es5"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "eslint --fix"
+    ],
+    "**/*.{md,json,css,scss}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "@philihp"
+    ],
+    "rules": {
+      "unicorn/filename-case": 0,
+      "jsx-a11y/anchor-is-valid": 0
+    }
+  }
+}
