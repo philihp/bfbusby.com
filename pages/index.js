@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from '../components/layouts/landing-layout'
 
 const Index = () => {
-  return <>OK</>
+  return <Layout>OK</Layout>
 }
 
 export default Index

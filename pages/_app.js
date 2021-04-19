@@ -1,10 +1,9 @@
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
+import theme from '../utils/theme'
 
-// eslint-disable-next-line react/prop-types
 const MyApp = ({ Component, pageProps }) => (
-  <ChakraProvider>
-    {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+  <ChakraProvider theme={theme}>
     <Component {...pageProps} />
   </ChakraProvider>
 )
