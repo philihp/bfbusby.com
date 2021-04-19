@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Text, Box, Flex, Button } from '@chakra-ui/react'
-import { Link } from 'next/link'
+import Link from 'next/link'
 import Logo from '../ui/logo'
 import MenuIcon from '../ui/menu-icon'
 import CloseIcon from '../ui/close-icon'
@@ -45,19 +44,20 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
         >
           <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/">
-              <a>Home</a>
+            <Link href="/bio">
+              <a>Bio</a>
             </Link>
           </Text>
 
           <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/">
-              <a>Home</a>
+            <Link href="/art">
+              <a>Art</a>
             </Link>
           </Text>
+
           <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/">
-              <a>Home</a>
+            <Link href="/bio">
+              <a>Experience</a>
             </Link>
           </Text>
 
@@ -76,7 +76,7 @@ const Header = (props) => {
                 ],
               }}
             >
-              Create Account
+              Contact
             </Button>
           </Text>
         </Flex>

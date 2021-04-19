@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layouts/landing-layout'
 
-const Index = () => {
-  return <Layout>index</Layout>
+const Art = () => {
+  return <Layout>art</Layout>
 }
 
-export default Index
+export default Art

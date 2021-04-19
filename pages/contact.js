@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layouts/landing-layout'
 
-const Index = () => {
-  return <Layout>index</Layout>
+const Contact = () => {
+  return <Layout>contact</Layout>
 }
 
-export default Index
+export default Contact
