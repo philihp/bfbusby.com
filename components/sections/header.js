@@ -1,8 +1,8 @@
 import React from 'react'
 import { Text, Box, Flex, Button } from '@chakra-ui/react'
-import Link from 'next/link'
 import Logo from '../ui/logo'
 import MenuIcon from '../ui/menu-icon'
+import MenuItem from '../ui/menu-item'
 import CloseIcon from '../ui/close-icon'
 
 const Header = (props) => {
@@ -43,23 +43,9 @@ const Header = (props) => {
           direction={['column', 'row', 'row', 'row']}
           pt={[4, 4, 0, 0]}
         >
-          <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/bio">
-              <a>Bio</a>
-            </Link>
-          </Text>
-
-          <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/art">
-              <a>Art</a>
-            </Link>
-          </Text>
-
-          <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 8 }} display="block">
-            <Link href="/bio">
-              <a>Experience</a>
-            </Link>
-          </Text>
+          <MenuItem href="/biography">Biography</MenuItem>
+          <MenuItem href="/gallery">Gallery</MenuItem>
+          <MenuItem href="/experience">Experience</MenuItem>
 
           <Text mb={{ base: 8, sm: 0 }} mr={{ base: 0, sm: 0 }} display="block">
             <Button

@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layouts/landing-layout'
 
-const Art = () => {
-  return <Layout>art</Layout>
+const Gallery = () => {
+  return <Layout>Gallery</Layout>
 }
 
-export default Art
+export default Gallery
