@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Text, Box, Flex, Button } from '@chakra-ui/react'
 import Logo from '../ui/logo'
 import MenuIcon from '../ui/menu-icon'
@@ -23,10 +24,7 @@ const Header = (props) => {
       {...props}
     >
       <Flex align="center">
-        <Logo
-          w="100px"
-          color={['white', 'white', 'primary.500', 'primary.500']}
-        />
+        <Logo color={['white', 'white', 'primary.500', 'primary.500']} />
       </Flex>
 
       <Box display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
@@ -62,7 +60,7 @@ const Header = (props) => {
                 ],
               }}
             >
-              Contact
+              <Link href="/contact">Contact</Link>
             </Button>
           </Text>
         </Flex>
